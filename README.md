@@ -96,4 +96,16 @@ Create a `.env.local` file in the root:
 NEXT_PUBLIC_NEWS_API_KEY=your_news_api_key
 NEXT_PUBLIC_OMDB_API_KEY=your_omdb_api_key
 
+Home Logo:
+
+![Screenshot 2025-07-01 185039](https://github.com/user-attachments/assets/08e11c09-4e88-4704-acc6-2a5714df33b8)
+
+Dashboard Looks:
+
+![Screenshot 2025-07-01 185241](https://github.com/user-attachments/assets/5e91cff0-a667-423a-aeef-72a9f6111fed)
+
+News Result:
+
+![Screenshot 2025-07-01 185441](https://github.com/user-attachments/assets/b2ea16b7-168c-47bc-89d0-50d948535fac)
+
 
