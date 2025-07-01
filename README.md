@@ -97,3 +97,13 @@ NEXT_PUBLIC_NEWS_API_KEY=your_news_api_key
 NEXT_PUBLIC_OMDB_API_KEY=your_omdb_api_key
 
 
+## 🖼️ Screenshots
+
+### 🏠 Homepage
+![Homepage Preview](./public/readme-assets/homepage.png)
+
+### 🎬 Dashboard
+![Dashboard Preview](./public/readme-assets/dashboard.png)
+
+### 💬 Chat Page
+![Chat Page Preview](./public/readme-assets/chat.png)
