@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../redux/store';
 import { toggleDarkMode } from '../redux/slices/preferencesSlice';
 
+
 export default function ThemeToggle() {
   const dispatch = useDispatch();
   const { darkMode } = useSelector((state: RootState) => state.preferences);
@@ -18,9 +19,13 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => dispatch(toggleDarkMode())}
-      className="bg-gray-300 dark:bg-gray-700 px-4 py-2 rounded text-sm dark:text-white"
+      className="transition-all duration-200 bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow hover:scale-110 flex items-center justify-center text-xl border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+      title={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
     >
-      {darkMode ? '☀️ Light' : '🌙 Dark'}
+      <span className="transition-all duration-200">
+        {darkMode ? '☀️' : '🌙'}
+      </span>
     </button>
   );
 }

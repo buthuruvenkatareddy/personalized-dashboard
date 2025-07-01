@@ -1,14 +1,182 @@
+
+
 @import "tailwindcss/preflight";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
 /* Optional global styles */
+
+
+
 body {
-  background-color: white;
-  color: black;
+  background: linear-gradient(120deg, #f0f4ff 0%, #e0e7ef 100%);
+  color: #18181b;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  transition: background 0.4s, color 0.3s;
 }
 
 .dark body {
-  background-color: #111827;
-  color: white;
+  background: linear-gradient(120deg, #181e2a 0%, #23304a 100%);
+  color: #f3f4f6;
+}
+
+
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid #2563eb22;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+a:hover {
+  color: #1d4ed8;
+  border-bottom: 2px solid #1d4ed8;
+}
+
+
+/* Card and container styles for a clean look */
+
+.container, .card, .panel {
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  padding: 2.5rem 2rem;
+  margin-bottom: 2.5rem;
+  border: none;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.container:hover, .card:hover, .panel:hover {
+  box-shadow: 0 12px 40px rgba(37,99,235,0.10);
+  background: #f3f6fa;
+}
+.dark .container, .dark .card, .dark .panel {
+  background: #232b3b;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+  border: none;
+}
+.dark .container:hover, .dark .card:hover, .dark .panel:hover {
+  background: #1a2233;
+  box-shadow: 0 12px 40px rgba(96,165,250,0.10);
+}
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  color: #2563eb;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  line-height: 1.15;
+}
+
+/* Hero/Brand Headings */
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #2563eb 20%, #60a5fa 80%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.04em;
+  text-shadow: 0 4px 24px rgba(37,99,235,0.18);
+}
+h2 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #2563eb;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: -0.03em;
+}
+h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 1.2rem;
+}
+h4, h5, h6 {
+  font-size: 1.2rem;
+}
+.dark h1 {
+  background: linear-gradient(90deg, #60a5fa 20%, #2563eb 80%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 4px 24px rgba(96,165,250,0.22);
+}
+.dark h2, .dark h3 {
+  color: #60a5fa;
+}
+h1 {
+  font-size: 2.8rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4, h5, h6 {
+  font-size: 1.2rem;
+}
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #60a5fa;
+  text-shadow: 0 2px 12px rgba(96,165,250,0.12);
+}
+
+/* Inputs */
+
+input, textarea, select {
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.05rem;
+  background: #f3f6fa;
+  color: #18181b;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  background: #e0e7ef;
+  box-shadow: 0 0 0 2px #2563eb33;
+}
+.dark input, .dark textarea, .dark select {
+  background: #232b3b;
+  color: #f3f4f6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.dark input:focus, .dark textarea:focus, .dark select:focus {
+  background: #181e2a;
+  box-shadow: 0 0 0 2px #60a5fa55;
+}
+
+/* Utility: Remove default list styles */
+
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+li {
+  margin-bottom: 0.5rem;
+  font-size: 1.01rem;
+}
+
+/* Utility: Responsive images */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 1.2rem;
 }
