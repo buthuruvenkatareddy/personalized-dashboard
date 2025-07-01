@@ -1,0 +1,14 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Optional global styles */
+body {
+  background-color: white;
+  color: black;
+}
+
+.dark body {
+  background-color: #111827;
+  color: white;
+}
